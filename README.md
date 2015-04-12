@@ -1,6 +1,8 @@
 pypicloud docker image
 ======================
 
+https://github.com/mathcamp/pypicloud
+
 # Run new installation:
 TODO
 

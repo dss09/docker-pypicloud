@@ -7,7 +7,7 @@ RUN apt-get update -qq && \
     apt-get install -y python-pip python2.7-dev && \
     pip install virtualenv && \
     virtualenv /env && \
-    /env/bin/pip install pypicloud uwsgi pastescript flywheel && \
+    /env/bin/pip install pypicloud uwsgi pastescript flywheel psycopg2 && \
     mkdir -p /var/lib/pypicloud && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
