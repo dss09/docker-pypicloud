@@ -1,7 +1,6 @@
 pypicloud docker image
 ======================
-https://travis-ci.org/smalllark/docker-pypicloud.svg?branch=master
-
+[![Build Status](https://travis-ci.org/smalllark/docker-pypicloud.svg?branch=master)](https://travis-ci.org/smalllark/docker-pypicloud)
 
 https://github.com/mathcamp/pypicloud
 
