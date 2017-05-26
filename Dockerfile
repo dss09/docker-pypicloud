@@ -1,6 +1,6 @@
-FROM phusion/baseimage:0.9.19
+FROM phusion/baseimage:0.9.22
 MAINTAINER Dmitriy S <smalllark@gmail.com>
-ENV PYPICLOUD_VERSION 0.4.4
+ENV PYPICLOUD_VERSION 0.5.3
 
 # Install packages required
 ENV DEBIAN_FRONTEND noninteractive
