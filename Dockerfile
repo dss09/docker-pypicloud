@@ -1,14 +1,14 @@
-FROM phusion/baseimage:0.9.22
+FROM phusion/baseimage:0.10.1
 MAINTAINER Dmitriy S <smalllark@gmail.com>
-ENV PYPICLOUD_VERSION 0.5.5
+ENV PYPICLOUD_VERSION 1.0.6
 
 # Install packages required
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq && \
-    apt-get install -y python-pip python2.7-dev libpq-dev && \
-    pip install virtualenv && \
+    apt-get install -y python3-pip python3-dev libpq-dev && \
+    pip3 install virtualenv && \
     virtualenv /env && \
-    /env/bin/pip install pypicloud==$PYPICLOUD_VERSION uwsgi pastescript flywheel psycopg2 && \
+    /env/bin/pip3 install pypicloud==$PYPICLOUD_VERSION uwsgi pastescript flywheel psycopg2 && \
     mkdir -p /var/lib/pypicloud && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
