@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker tag ${IMAGE_NAME} ${DOCKER_REPO}:${PYPICLOUD_VERSION}
+docker push $DOCKER_REPO:${PYPICLOUD_VERSION}

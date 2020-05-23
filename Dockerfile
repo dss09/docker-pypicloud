@@ -1,6 +1,10 @@
 FROM phusion/baseimage:0.11
 MAINTAINER Dmitriy S <smalllark@gmail.com>
-ENV PYPICLOUD_VERSION 1.0.11
+
+# Metadata params
+ARG BUILD_DATE
+ARG PYPICLOUD_VERSION
+ARG VCS_REF
 
 # Install packages required
 ENV DEBIAN_FRONTEND noninteractive
